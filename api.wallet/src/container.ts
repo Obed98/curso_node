@@ -12,7 +12,7 @@ export default(app: express.Application) => {
 
     container.register({
         testService: asClass(TestService).scoped()
-    })
+    });
 
-    app.use(scopePerRequest(container))
-}
+    app.use(scopePerRequest(container));
+};
