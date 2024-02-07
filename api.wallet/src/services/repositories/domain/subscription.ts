@@ -1,4 +1,4 @@
-export interface Suscription {
+export interface Subscription {
     id: number,
     code: string,
     cron: string,
