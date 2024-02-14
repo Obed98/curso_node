@@ -15,7 +15,7 @@ export default(app: express.Application) => {
     //repositories
     container.register({
         suscriptionRepository: asClass(SubscriptionMySQLRepository).scoped()
-    })
+    });
     //services
     container.register({
         testService: asClass(TestService).scoped(),
